@@ -1,6 +1,7 @@
+console.log("hooked up fine")
 let doggo = {
   name: "Sophia",
-  moods: ["sad", "alert", "excited", "body-slam"]
+  moods: ["sad", "alert", "excited", "body-slam"],
   pets: 0,
   moodIndex: 0,
   tolerance: 2,
@@ -17,8 +18,8 @@ function pet() {
 
 function drawDoggo() {
   document.getElementById("pets").innerText = doggo.pets
-  document.getElementById("doggo-image").setAttribute("src", doggo.images.moodIndex))
-  document.getElementById("mood").innerText = doggo.moods.moodIndex
+  document.getElementById("doggo-image").setAttribute("src", doggo.images[doggo.moodIndex])
+  document.getElementById("mood").innerText = doggo.moods[doggo.moodIndex]
   if (doggo.moodIndex == doggo.moods.length - 1) {
     document.getElementById('pet-button').disabled = true;
   } else {
@@ -26,7 +27,7 @@ function drawDoggo() {
   }
 }
 
-function doggoTreats() {
+function treats() {
   doggo.moodIndex = 0
   doggo.pets = 0
   drawDoggo()
