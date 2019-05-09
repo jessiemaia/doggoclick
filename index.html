@@ -5,14 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Doggo Clicker</title>
 </head>
 
 <body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col d-flex">
+        <h1>Doggo:</h1>
+      </div>
+    </div>
+  </header>
+  <div class="main container-fluid">
+    <div class="row">
+      <div class="col">
+        <img id="doggo-pic" src="/assets/saddoggo.jpg" alt="doggo">
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-6">
+            <h3>Doggo</h3>
+            <h3>Moods</h3>
+            <h3>Pets</h3>
+          </div>
+          <div class="col-6">
+            <h3 id="doggo-name">Sophia</h3>
+            <h3 id="mood">Sad</h3>
+            <h3 id="pets">0</h3>
+          </div>
+        </div>
+        <div class="row">
+          <button id="pet-button" class="btn btn-info" onclick="pet()">Petz</button>
+          <button id="treat-button" class="btn btn-info" onclick="doggoTreats()">Treatz</button>
+        </div>
+      </div>
+    </div>
 
 
-  <script scr="app.js"> </script>
+    <script scr="app.js"> </script>
 </body>
 
 </html>
